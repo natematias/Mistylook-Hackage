@@ -15,9 +15,10 @@
 				ob_start('ml_hack');
 				foreach($posts as $post)
 				{
-					the_post();
+                                        the_post();
+                                        if(is_sticky($post->ID))continue;
 				?>
-				<?php if ( in_category($AsideId) && !is_single() ) : ?>
+				<?php if ( in_category($AsideId) && !is_single()): ?>
 					<ul class="asides">
 						<li id="p<?php the_ID(); ?>">
 							<?php echo wptexturize($post->post_content); ?>
