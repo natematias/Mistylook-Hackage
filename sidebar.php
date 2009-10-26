@@ -1,13 +1,6 @@
 <div id="sidebar">
 <ul>
 <li class="sidebox">
-<ul>
-  <li><?php wp_loginout(); ?></li>
-  <?php if(get_page_by_title('Blog Archive')) : ?>
-  <li><a href="/blog-archive/">Blog Archive</a></li>
-  <?php endif;?>
-</ul>
-
 </li>
 <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('side_box') ) : else : ?>
 <?php if(!is_home()) mistylook_ShowRecentPosts();?>
