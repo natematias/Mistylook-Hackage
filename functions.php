@@ -25,8 +25,8 @@ function legacy_comments( $file ) {
       ));
       register_sidebar(array(
        'name' => 'top_list',
-       'before_widget' => '<li class="sidebox">',
-       'after_widget' => '</li>',
+       'before_widget' => '<div class="topbar_widget">',
+       'after_widget' => '</div>',
        'before_title' => '<!--',
        'after_title' => '-->',
       ));
