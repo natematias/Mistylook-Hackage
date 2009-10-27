@@ -722,9 +722,9 @@ a.unilives_video_link img{
 div.unilives_video_info{
   position:absolute;
   background:black;
-  top:60px;
+  top:50px;
   left:0px;
-  height:40px;
+  height:50px;
   color:white;
   font-size:12px;
   line-height:100%;
@@ -735,6 +735,11 @@ div.unilives_video_info{
   -moz-opacity:0.4;
   -khtml-opacity: 0.4;
   opacity: 0.4;
+}
+
+div.unilives_video_info div{
+ margin-right:10px;
+ margin-bottom:4px;
 }
 
 a.unilives_video_link:hover div.unilives_video_info{
@@ -755,8 +760,7 @@ div.unilives_video_author{
 div.unilives_video_location{
   font-size:10px;
   font-style:italic;
-  padding:2px;
-  padding-top:4px;
+  margin-left:4px;
 }
 div.unilives_video_excerpt{
   display:none;
