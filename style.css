@@ -78,7 +78,7 @@ fieldset
 }
 body 
 {
-	background: #f3f6f3;
+	background: #F9F9F0;
 	margin: 0; 
 	font: 76%/1.6em verdana, tahoma, arial,  sans-serif; 
 	color: #333; 
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6
 	color:#333;		
 	text-decoration: none;
 	background:#dedede;
-	letter-spacing:0px;
+	letter-spacing: 1px;
 }
 #navigation ul li a:hover, #navigation ul li a:active, #navigation ul li.current_page_item a {
 	background: #fff;
@@ -217,7 +217,7 @@ html #feedarea {
 	margin-top: 0;
 }
 #content {
-	margin: 0 10px 0 30px;
+	margin: 10px 10px 10px 30px;
 }
  html #content {
 	height: 1%;
