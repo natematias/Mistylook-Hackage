@@ -695,7 +695,23 @@ border:0;
 
 /*-----------------Nathan's Additions----------------*/
 div.unilives_video_widget{
-  background:#888888;
+}
+
+div.unilives_video_widget_separator{
+clear:both;
+margin:0px;
+padding:0px;
+}
+div.unilives_video_widget_title{
+  margin-top:2px;
+  padding-left:4px;
+  font-size:10px;
+  font-style:italic;
+  font-weight:bold;
+  background:#eeeeee;
+  border:1px solid #dddddd;
+  color:#999988;
+  -moz-border-radius: 5px; -webkit-border-radius: 5px;
 }
 
 a.unilives_video_link{
@@ -703,6 +719,7 @@ a.unilives_video_link{
   float:left;
   text-decoration:none;
   margin:5px;
+  margin-bottom:0px;
 }
 div.unilives_video{
  width:150px;
@@ -768,3 +785,4 @@ div.unilives_video_excerpt{
 div.unilives_video_university{
   display:none;
 }
+
