@@ -634,7 +634,7 @@ font-variant:normal;
 }
 
 input#s.textbox {
-width:82px;
+width:100px;
 }
 
 #navigation ul li.search input#searchsubmit {
@@ -796,3 +796,14 @@ div.unilives_video_university{
   display:none;
 }
 
+#bottom_bar{
+  border-bottom:1px solid #ccccbb;
+}
+
+.bottom_bar_widget li{
+  display:inline-block;
+  margin-right:10px;
+}
+.bottom_bar_title{
+  display:none;
+}

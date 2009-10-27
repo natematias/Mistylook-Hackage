@@ -43,6 +43,14 @@ function legacy_comments( $file ) {
        'before_title' => '<!--',
        'after_title' => '-->',
       ));
+     register_sidebar(array(
+       'name' => 'bottom_bar',
+       'before_widget' => '<div class="bottom_bar_widget">',
+       'after_widget' => '</div>',
+       'before_title' => '<div class="bottom_bar_title">',
+       'after_title' => '</div>',
+      ));
+
 
     }
 if ( function_exists('unregister_sidebar_widget') )
