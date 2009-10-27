@@ -3,8 +3,9 @@
 <div id="content-main">
 <?php if (have_posts()) : ?>
 		<div class="postnav">
-			<div class="alignleft"><?php previous_post_link('&laquo; %link') ?></div>
+                        <div class="alignleft"><?php previous_post_link('&laquo; %link') ?></div>
 			<div class="alignright"><?php next_post_link('%link &raquo;') ?></div>
+
 		</div>
 		<?php while (have_posts()) : the_post(); ?>
 			<div id="post-<?php the_ID(); ?>" <?php if (function_exists('post_class')){ post_class(); } else { echo 'class="post"' ;} ?>>

@@ -141,18 +141,17 @@ h1, h2, h3, h4, h5, h6
 	border: #ccc 1px solid; 
 	border-bottom:none;		
 }
-#navigation ul li.search {
+#searchform {
 	font-size: 0.9em; 
-	right: 0; 
-	position: absolute; 
-	top: 0;
+        display:inline-block;
+        margin-left:50px;
 }
-#navigation ul li.search input#searchsubmit {
+#searchform input#searchsubmit {
 	border: #999 1px solid; 
 	font-size: 0.9em; 
 	background: #ddd; 
 	margin: 0 0 0 2px; 
-	color: #265e15; 
+	color: #23699A;
 	padding: 2px; 		
 }
 #header {
@@ -299,21 +298,21 @@ html #feedarea {
 	margin:0;
 	padding:0;	
 }
-#content .post-info, 
 #content h2.pagetitle 
 {
 	background:url(img/underline1.jpg) no-repeat left bottom;
 	padding-bottom:15px;	
 }
 .postnav {
-	display: block;
+	display: none;
 	margin: 10px 0 60px;
-	
+	position:relative;
 }
-.alignleft 
+.postnav div.alignleft 
 {
+	margin:0px;
 	float:left;
-	text-align:left;	
+	text-align:left;
 }
 .alignright
 {
@@ -642,6 +641,12 @@ width:82px;
 color:#23699a;
 }
 
+li.search{
+  position:relative;
+  padding:5px;
+  text-align:right;
+}
+
 li.sidebox {
 background-image:url('http://worlduniversityproject.files.wordpress.com/2009/10/sideheadtop_250.gif');
 }
@@ -693,7 +698,12 @@ display:none;
 border:0;
 }
 
-/*-----------------Nathan's Additions----------------*/
+/*-----------------top bar and video widget----------------*/
+div#top_bar{
+  padding-bottom:2px;
+  border-bottom:1px solid #dddddd;
+  margin-bottom:10px;
+}
 div.unilives_video_widget{
 }
 
