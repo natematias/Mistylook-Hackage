@@ -1,9 +1,8 @@
-<?php get_header();?>
+<?php 
+get_header();?>
 <div id="content">
 <div id="content-main">
-<div id="topbar">
 <?php include (TEMPLATEPATH . '/topbar.php'); ?>
-</div><!-- end id:topbar-->
 
 		<?php if ($posts) {
 				if (get_settings('mistylook_asideid') != "")
@@ -17,6 +16,7 @@
 				{
                                         the_post();
                                         if(is_sticky($post->ID))continue;
+
 				?>
 				<?php if ( in_category($AsideId) && !is_single()): ?>
 					<ul class="asides">
@@ -31,7 +31,7 @@
         <div class="posttitle">
           <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanent Link to','ml');?> <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 					<p class="post-info">            
-            <?php the_time(__('M jS, Y','ml')) ?> <?php _e('by','ml');?> <?php the_author_posts_link() ?> <?php edit_post_link(__('Edit','ml'), '', ' | '); ?> </p>          
+            <?php the_time(__('M jS, Y','ml')) ?> <?php _e('by','ml');?> <?php the_author_posts_link() ?> <?php edit_post_link(__('Edit','ml'), ' | ', ''); ?> </p>          
 				</div>
 
 				<div class="entry">

@@ -7,6 +7,19 @@
   if (0 < $numposts) $numposts = number_format($numposts);
 	$numcmnts = $wpdb->get_var("SELECT COUNT(*) FROM $wpdb->comments WHERE comment_approved = '1'");
 		if (0 < $numcmnts) $numcmnts = number_format($numcmnts);
+
+function find_category_by_name($name){
+  $cat = null;
+  $category_ids = get_all_category_ids();
+  foreach($category_ids as $cat_id) {
+    if(!strcmp(get_cat_name($cat_id), "Blog")){
+      $cat = $cat_id;
+    }
+  }
+  return $cat;
+}
+
+
 // ----------------
 // For backward Compatiblity to older versions of WordPress
 add_filter( 'comments_template', 'legacy_comments' );

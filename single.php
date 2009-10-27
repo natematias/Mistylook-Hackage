@@ -10,7 +10,7 @@
 			<div id="post-<?php the_ID(); ?>" <?php if (function_exists('post_class')){ post_class(); } else { echo 'class="post"' ;} ?>>
 				<div class="posttitle">
 					<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanent Link to','ml');?> <?php the_title(); ?>"><?php the_title(); ?></a></h2>
-					<p class="post-info"><?php the_time(__('M jS, Y','ml')) ?> <?php _e('by','ml');?> <?php the_author_posts_link() ?> <?php edit_post_link(__('Edit','ml'), '', ' | '); ?> </p>
+					<p class="post-info"><?php the_time(__('M jS, Y','ml')) ?> <?php _e('by','ml');?> <?php the_author_posts_link() ?> <?php edit_post_link(__('Edit','ml'), ' | ', ''); ?> </p>
 				</div>
 				<div class="entry">
 					<?php the_content(); ?>
