@@ -98,7 +98,9 @@ h1,h2,h3,h4,h5,h6 {
 #searchform {
 	font-size: 0.9em; 
   display:inline-block;
-  margin-left:50px;}
+  margin-left:0px;
+  width:100%;
+  text-align:center;}
 #searchform input#searchsubmit {
 	border: #999 1px solid; 
 	font-size: 0.9em; 
@@ -300,7 +302,7 @@ input.textbox:focus, textarea:focus, input[type="text"]:focus {
 	background:#fff url(img/shadow_top.gif) repeat-x top;
 	border:#999 1px solid;}
 #submit {padding:3px 5px;}
-input#s.textbox {width:100px;}
+input#s.textbox {width:150px;}
 .post h4 {
 	font-size:1em;
 	font-weight:normal;

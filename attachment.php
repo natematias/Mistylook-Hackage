@@ -9,7 +9,7 @@
 				<div class="posttitle">
 					<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e('Permanent Link to','ml');?> <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 					<p class="post-info">
-						<?php _e('Posted in','ml');?> <?php the_category(', ') ?>  <?php _e('on','ml');?> <?php the_time(__('M jS, Y','ml')) ?> <?php edit_post_link(__('Edit','ml'), '', ' | '); ?> <?php comments_popup_link(__('No Comments &#187;','ml'), __('1 Comment &#187;','ml'), __('% Comments &#187;','ml'),'',__('Comments Off','ml')); ?> </p>
+						<?php _e('Posted in','ml');?> <?php the_category(', ') ?>  <?php _e('on','ml');?> <?php the_time(__('M jS, Y','ml')) ?> <?php edit_post_link(__('Edit','ml'), ' | ', ' | '); ?> <?php comments_popup_link(__('No Comments &#187;','ml'), __('1 Comment &#187;','ml'), __('% Comments &#187;','ml'),'',__('Comments Off','ml')); ?> </p>
 				</div>
 				<div class="entry">
 					<p class="<?php echo $classname; ?>"><?php echo $attachment_link; ?><br /><?php echo basename($post->guid); ?></p>
